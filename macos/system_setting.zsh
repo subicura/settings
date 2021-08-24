@@ -35,11 +35,6 @@ logger() {
   logger "info" "✅ [Mission Control] Disable Automatically rearrange Spaces based on most recent use"
   defaults write com.apple.dock mru-spaces -bool false
 
-  ## Security & Privacy > General > Require password "immediately" after sleep or screen saver begins
-  logger "info" "✅ [Security] Require password 'immediately' after sleep or screen saver begins"
-  defaults write com.apple.screensaver askForPassword -int 1
-  defaults write com.apple.screensaver askForPasswordDelay -int 0
-
   ## Keyboard > Text > Correct spelling automatically (disable)
   logger "info" "✅ [Keyboard] Disable correct spelling automatically"
   defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
