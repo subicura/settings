@@ -25,7 +25,7 @@ logger() {
 }
 
 () {
-  logger "info" "Install brew ..."
+  logger "info" "Install and upgrade (by default) all dependencies from the Brewfile ..."
   curl --silent https://raw.githubusercontent.com/subicura/settings/main/macos/Brewfile > Brewfile
   brew bundle
   rm Brewfile 
